@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
+    <script src="guessing-game.js"></script>
+    <meta charset="UTF-8" />
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <!-- the MAIN.CSS file is linked here -->
   </head>
 
   <body>
+    <section>
+      <header id="head">
+        <h1 class="top">The Guessing Game</h1>
+        <h3 class="bottom">Guess a number between 1-100</h3>
+      </header>
 
+      <!-- this nav will be where we
+           input 4 numbers to guess the answer -->
+      <div id="numGuess">
+        <ul class="chances">
+          <li id="chance-1">X</li>
+          <li id="chance-2">X</li>
+          <li id="chance-3">X</li>
+          <li id="chance-4">X</li>
+        </ul>
+      </div>
 
+      <p id="message">...</p>
 
+      <!-- <ul id="scoreBoardContainer">
+        <li id="You-Win">...</li>
+        <li id="YouLose">...</li>
+      </ul> -->
 
+      <!-- getElementById for IDs -->
+      <!--we will have a changing string telling us how many more guesses we have for each time we input a guess -->
+      <div class="buttonz">
+        <input class="guess" type="number" placeholder="enter guess here" />
+        <button class="guessCheck" onclick="submitGuess()" type="submit">
+          Submit Guess
+        </button>
 
+        <button class="refreshButton" onclick="playagain()">Play Again</button>
+
+        <button class="hintStyle" onclick="hint()" type="hint">Hint</button>
+      </div>
+      <div>
+        <span class="hint">
+          <p class="hint" id="hintText">.</p>
+          <p class="hint" id="hintText2">.</p>
+          <p class="hint" id="hintText3">.</p>
+          <p class="hint" id="hintText4">.</p>
+          <p class="hint" id="hintText5">.</p>
+          <p class="hint" id="hintText6">.</p>
+        </span>
+      </div>
+    </section>
     <!-- <script src='js/guessing-game.js'></script> -->
     <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
   </body>
-
 </html>

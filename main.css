@@ -1,1 +1,142 @@
-/* Write your CSS code in this file */
+/* Write your CSS code in this file tytft*/
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  font-size: 35px;
+  background-color: rgb(69, 77, 92);
+  width: 100%;
+  display: flex;
+  flex-basis: 0%;
+  justify-content: center;
+}
+
+section {
+  padding: 1%;
+  margin: 10%;
+  background-color: rgb(149, 60, 238);
+  /* border: 5px solid rgb(25, 76, 87); */
+  border: 5px solid aqua;
+  border-radius: 5%;
+}
+
+#head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  color: aqua;
+}
+
+.top {
+  color: black;
+  /* background-color: rgb(148, 140, 213); */
+  margin-bottom: 20px;
+  padding: 10px;
+  /* box-shadow: 0 1px 3px 0.1px black; */
+  border-bottom: solid rgb(40, 18, 97);
+  color: aqua;
+}
+
+#numGuess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chances {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 15px;
+  padding: 15px;
+  background-color: rgb(47, 58, 218);
+  border: 5px solid aqua;
+}
+
+#chance-1 {
+  box-shadow: 0 1px 3px 0.1px black;
+  padding: 5px;
+  background-color: aqua;
+}
+
+#chance-2 {
+  box-shadow: 0 1px 3px 0.1px black;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: aqua;
+}
+
+#chance-3 {
+  box-shadow: 0 1px 3px 0.1px black;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: aqua;
+}
+
+#chance-4 {
+  box-shadow: 0 1px 3px 0.1px black;
+  padding: 5px;
+  margin-left: 15px;
+  background-color: aqua;
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  list-style-type: none;
+  color: aqua;
+}
+
+.hint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  list-style-type: none;
+  color: aqua;
+}
+
+#guessesLeft {
+  margin: 10px;
+}
+
+.buttonz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 19px;
+}
+
+.guessCheck {
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: white;
+}
+
+::placeholder {
+  background-color: white;
+  color: black;
+}
+
+.refreshButton {
+  background-color: white;
+}
+
+.hintStyle {
+  background-color: white;
+}
+
+.refreshButton {
+  margin-right: 5px;
+}
